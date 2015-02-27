@@ -13,8 +13,50 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        println("RLMRealm.defaultRealmPath() = \(RLMRealm.defaultRealmPath())")
+        
+        var face = Face()
+        
+        var salmonSushi = Sushi()
+        var tunaSushi = Sushi()
+        
+        var company = Company()
+        company.name = "CocoaKansai co."
+        
+        var alex = OtherPerson()
+        alex.name = "Alex"
+        var ben = OtherPerson()
+        ben.name = "Ben"
+        var charlie = OtherPerson()
+        ben.name = "Charlie"
+        
+        var me = Person()
+        me.name = "Me"
+        me.face = face
+        me.sushi.addObject(salmonSushi)
+        me.sushi.addObject(tunaSushi)
+        me.company = company
+        me.friends.addObject(alex)
+        me.friends.addObject(ben)
+        me.friends.addObject(charlie)
+        
+        var you = Person()
+        you.name = "You"
+        you.friends.addObject(ben)
+        
+        let realm = RLMRealm.defaultRealm()
+        realm.transactionWithBlock{
+            realm.addObject(face)
+            realm.addObject(salmonSushi)
+            realm.addObject(tunaSushi)
+            realm.addObject(company)
+            realm.addObject(alex)
+            realm.addObject(ben)
+            realm.addObject(charlie)
+            realm.addObject(me)
+            realm.addObject(you)
+        }
     }
 
     override func didReceiveMemoryWarning() {

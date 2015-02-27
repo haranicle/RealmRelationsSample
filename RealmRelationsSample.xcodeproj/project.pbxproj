@@ -16,6 +16,11 @@
 		5FEB6C941AA0984A000F7891 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEB6C931AA0984A000F7891 /* Realm.framework */; };
 		5FEB6C951AA0984A000F7891 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEB6C931AA0984A000F7891 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5FEB6C981AA09A74000F7891 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB6C971AA09A74000F7891 /* RLMSupport.swift */; };
+		5FEB6C9C1AA09DB4000F7891 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB6C9B1AA09DB4000F7891 /* Person.swift */; };
+		5FEB6C9E1AA0C1DF000F7891 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB6C9D1AA0C1DF000F7891 /* Face.swift */; };
+		5FEB6CA11AA0CA1A000F7891 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB6CA01AA0CA1A000F7891 /* Sushi.swift */; };
+		5FEB6CA51AA0D0C6000F7891 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB6CA41AA0D0C6000F7891 /* Company.swift */; };
+		5FEB6CA71AA0D17F000F7891 /* OtherPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB6CA61AA0D17F000F7891 /* OtherPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		5FEB6C891AA092F6000F7891 /* RealmRelationsSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRelationsSampleTests.swift; sourceTree = "<group>"; };
 		5FEB6C931AA0984A000F7891 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		5FEB6C971AA09A74000F7891 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		5FEB6C9B1AA09DB4000F7891 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		5FEB6C9D1AA0C1DF000F7891 /* Face.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		5FEB6CA01AA0CA1A000F7891 /* Sushi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
+		5FEB6CA41AA0D0C6000F7891 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		5FEB6CA61AA0D17F000F7891 /* OtherPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 		5FEB6C701AA092F6000F7891 /* RealmRelationsSample */ = {
 			isa = PBXGroup;
 			children = (
+				5FEB6C9F1AA0C1F5000F7891 /* Model */,
 				5FEB6C971AA09A74000F7891 /* RLMSupport.swift */,
 				5FEB6C731AA092F6000F7891 /* AppDelegate.swift */,
 				5FEB6C751AA092F6000F7891 /* ViewController.swift */,
@@ -132,6 +143,18 @@
 				5FEB6C881AA092F6000F7891 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FEB6C9F1AA0C1F5000F7891 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FEB6C9B1AA09DB4000F7891 /* Person.swift */,
+				5FEB6C9D1AA0C1DF000F7891 /* Face.swift */,
+				5FEB6CA01AA0CA1A000F7891 /* Sushi.swift */,
+				5FEB6CA41AA0D0C6000F7891 /* Company.swift */,
+				5FEB6CA61AA0D17F000F7891 /* OtherPerson.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +260,11 @@
 			files = (
 				5FEB6C761AA092F6000F7891 /* ViewController.swift in Sources */,
 				5FEB6C981AA09A74000F7891 /* RLMSupport.swift in Sources */,
+				5FEB6CA11AA0CA1A000F7891 /* Sushi.swift in Sources */,
+				5FEB6C9E1AA0C1DF000F7891 /* Face.swift in Sources */,
+				5FEB6CA51AA0D0C6000F7891 /* Company.swift in Sources */,
+				5FEB6CA71AA0D17F000F7891 /* OtherPerson.swift in Sources */,
+				5FEB6C9C1AA09DB4000F7891 /* Person.swift in Sources */,
 				5FEB6C741AA092F6000F7891 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
